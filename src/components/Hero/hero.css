@@ -1,0 +1,186 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-h{
+    display: flex;
+    padding: 1.5rem 2rem;
+    flex: 3;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+
+
+.best-trainer{
+    margin-top: 4rem;
+    background-color: #363d42;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 20px 14px;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.best-trainer>span{
+    z-index: 10;
+}
+
+.best-trainer>div{
+    position: absolute;
+    background-color: var(--orange);
+    width: 5.4rem;
+    height: 80%;
+    left: 8px;
+    border-radius: 3rem;
+    z-index: 5;
+}
+
+.hero-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+    text-overflow: inherit;
+}
+
+.hero-heading>div:nth-of-type(3){
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 80%;
+}
+
+.hero-decos{
+    display: flex;
+    gap: 2rem;
+}
+
+.hero-decos>div{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-decos>div>span:nth-of-type(1){
+    font-size: 2rem;
+    color: white;
+}
+
+.hero-decos>div>span:nth-of-type(2){
+    color: var(--gray);
+    text-transform: uppercase;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 1rem;
+    font-weight: normal;
+}
+
+.hero-buttons>:nth-child(1){
+    color: white;
+    background-color: var(--orange);
+    width: 8rem;
+}
+
+.hero-buttons>:nth-child(2){
+    color: white;
+    background-color: transparent;
+    width: 8rem;
+    border: 2px solid var(--orange);
+}
+
+.right-h{
+    flex: 1;
+    position: relative;
+    background-color: var(--orange);
+}
+
+.right-h>.button{
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    color: black;
+}
+
+.heart-rate{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--darkGrey);
+    width: fit-content;
+    padding: 1rem;
+    align-items: flex-start;
+    border-radius: 5px;
+    position: absolute;
+    right: 4rem;
+    top: 7rem;
+}
+
+.heart-rate>img{
+    width: 2rem;
+}
+
+.heart-rate>span:nth-of-type(1){
+    color: var(--gray);
+}
+
+.heart-rate>span:nth-of-type(2){
+    color: white;
+    font-size: 1.5rem;
+}
+
+.hero-image{
+    position: absolute;
+    top: 10rem;
+    right: 8rem;
+    width: 23rem;
+}
+
+.hero-image-back{
+    position: absolute;
+    top: 4rem;
+    right: 20rem;
+    z-index: -1;
+    width: 15rem;
+}
+
+.hero-calories{
+    display: flex;
+    gap: 2rem;
+    background-color: var(--caloryCard);
+    border-radius: 5px;
+    padding: 1rem;
+    width: max-content;
+    position: absolute;
+    top: 32rem;
+    right: 28rem;
+}
+
+.hero-calories>img{
+    width: 3rem;
+}
+
+.hero-calories>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-calories>div>span:nth-of-type(1){
+    color: var(--gray);
+}
+
+.hero-calories>div>span:nth-of-type(2){
+    color: white;
+    font-size: 1.5rem;
+}
