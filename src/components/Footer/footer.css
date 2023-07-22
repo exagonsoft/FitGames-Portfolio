@@ -55,6 +55,12 @@
   cursor: pointer;
 }
 
+.social-links>a>img{
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
 .logo-f > img {
   width: 10rem;
 }

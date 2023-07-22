@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="social-f">
         <div className="social-links">
           <img src={github} alt="" />
-          <img src={linkedin} alt="" />
+          <a href="https://www.linkedin.com/in/felix-sunkel-197886214"><img src={linkedin} alt="" /></a>
           <img src={instagram} alt="" />
         </div>
         <div className="logo-f">
