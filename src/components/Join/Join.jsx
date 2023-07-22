@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 
 const Join = () => {
   const form = useRef();
-
+  const inMobile = window.innerWidth <= 768 ? true : false;
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -45,7 +45,7 @@ const Join = () => {
             name="user_email"
             placeholder="Enter your Email"
           />
-          <button className="button btn-j">Join Now</button>
+          <button className="button btn-j">{inMobile ? 'Join' : 'Join Now'}</button>
         </form>
       </div>
     </div>

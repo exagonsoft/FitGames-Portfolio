@@ -98,3 +98,29 @@
 .plan:nth-child(2) > button {
   color: var(--orange);
 }
+
+@media screen and (max-width: 768px) {
+
+  .plans{
+    flex-direction: column;
+  }
+
+  .plans-header{
+    flex-direction: column;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .plans-cards{
+    flex-direction: column;
+  }
+
+  .plans-cards>:nth-child(2){
+    transform: none;
+  }
+
+  .plan{
+    padding: 15px;
+  }
+}
