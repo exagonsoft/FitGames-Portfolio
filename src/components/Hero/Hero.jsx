@@ -9,6 +9,7 @@ import Calories from "../../assets/calories.png";
 const Hero = () => {
   return (
     <div className="hero">
+      <div className="blur hero-blur"></div>
       <div className="left-h">
         <Header />
         {/* best-trainer-ad */}
@@ -61,10 +62,10 @@ const Hero = () => {
           <span>116 bpm</span>
         </div>
         {/**Hero images */}
-        <img src={hero_image} alt="Main Image" className="hero-image" />
+        <img src={hero_image} alt="" className="hero-image" />
         <img
           src={hero_image_back}
-          alt="Back image"
+          alt=""
           className="hero-image-back"
         />
 
