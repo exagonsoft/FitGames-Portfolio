@@ -36,6 +36,7 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
+  
 }
 
 .plan {
@@ -47,6 +48,7 @@
   padding: 1.5rem;
   width: 15rem;
   border-radius: 5px;
+  box-shadow: 2px 5px 8px rgba(24, 23, 23, 0.834);
 }
 
 .plan:nth-child(2) {

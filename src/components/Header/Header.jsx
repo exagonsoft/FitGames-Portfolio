@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.css";
 import fglogo from "../../assets/fglogo.png";
 import bars from "../../assets/bars.png";
@@ -7,13 +7,38 @@ import { Link } from "react-scroll";
 const Header = () => {
   const inMobile = window.innerWidth <= 768 ? true : false;
   const [showMenu, setShowMenu] = useState(false);
+  const [showBackToTop, setShowBackToTop] = useState(false);
 
   const ToggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
+  const checkScroll = () => {
+    if (window.scrollY > 50) {
+      setShowBackToTop(true);
+    } else {
+      setShowBackToTop(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", checkScroll);
+    checkScroll();
+
+    return () => {
+      window.removeEventListener("scroll", checkScroll);
+    };
+  }, []);
+
   return (
     <div className="header">
-      {inMobile ? <></> : <div className="btn-to-top"><Link to="header" spy={true} smooth={true}>UP</Link></div>}
+      {showBackToTop && !inMobile && (
+        <div className="btn-to-top">
+          <Link to="header" spy={true} smooth={true}>
+            UP
+          </Link>
+        </div>
+      )}
 
       <img src={fglogo} alt="Logo" className="logo"></img>
       {showMenu === false && inMobile === true ? (

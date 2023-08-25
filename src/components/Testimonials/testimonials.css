@@ -43,16 +43,18 @@
   object-fit: cover;
   top: 2rem;
   right: 8rem;
+  border-radius: 10px;
 }
 
 .right-t > :nth-child(1) {
   position: absolute;
   width: 17rem;
   height: 20rem;
-  border: 2px solid orange;
+  border: 2px solid #00abff;
   background-color: transparent;
   right: 9rem;
   top: 0.9rem;
+  border-radius: 10px;
 }
 
 .right-t > :nth-child(2) {
@@ -62,7 +64,9 @@
   background: var(--planCard);
   top: 4rem;
   right: 7rem;
-}
+  border-radius: 10px;
+  box-shadow: 2px 5px 8px rgba(24, 23, 23, 0.834);;
+  }
 
 .selector {
   display: flex;

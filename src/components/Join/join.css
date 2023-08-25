@@ -36,6 +36,8 @@
   gap: 3rem;
   background-color: gray;
   padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 5px 8px rgba(24, 23, 23, 0.834);;
 }
 
 .email-containner > input {

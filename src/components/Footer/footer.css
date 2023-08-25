@@ -8,7 +8,6 @@
   width: 26rem;
   height: 12rem;
   filter: blur(200px);
-  background: red;
 }
 
 @-moz-document url-prefix() {
@@ -27,7 +26,6 @@
   width: 26rem;
   height: 12rem;
   filter: blur(200px);
-  background: rgb(255, 115, 0);
 }
 
 .footer > hr {
